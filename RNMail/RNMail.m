@@ -124,6 +124,8 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                 mimeType = @"application/vnd.ms-excel";     
             } else if ([attachmentType isEqualToString:@"mp4"]) {
                 mimeType = @"video/mp4";
+            } else if ([attachmentType isEqualToString:@"mov"]) {
+                mimeType = @"video/quicktime";
             }
 
             // Add attachment
